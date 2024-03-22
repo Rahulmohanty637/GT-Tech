@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer.jsx";
 import Popup from "./components/Popup/Popup.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 
 const BannerData = {
   discount: "30% OFF",
@@ -63,7 +64,7 @@ const App = () => {
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
       <Services />
-      <Products />
+      <Portfolio/>
       <Banner data={BannerData} />
       <Banner data={BannerData2} />
       <Blogs />

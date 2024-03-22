@@ -1,5 +1,7 @@
 import React from "react";
 import Img2 from "../../assets/hero/fourth.png";
+import { TypingText, TitleText } from "../CustomTexts/CustomTexts";
+import { motion } from 'framer-motion';
 const ServicesData = [
   {
     id: 1,
@@ -67,18 +69,33 @@ const ServicesData = [
   },
 ];
 const Services = () => {
+  const staggerContainer = (staggerChildren, delayChildren) => ({
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren,
+        delayChildren,
+      },
+    },
+  });
   return (
     <>
       <span id="services"></span>
       <div className="py-10">
         <div className="container">
           {/* Heading section  */}
-          <div className="text-center mb-20">
-            <h1 className="text-4xl font-bold font-cursive text-gray-800">
-            How can we help you?
-            </h1>
-          </div>
-
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className='2xl:max-w-[1280px] w-full mx-auto flex flex-col'
+          >
+            <TypingText title="| About"
+              textStyles="text-center" />
+            <TitleText title={<>How can we help you?
+              <br className='md:block hidden' /></>} textStyles="text-center" />
+          </motion.div>
           {/* Services Card section  */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20 md:gap-5 mt-10 place-items-center">
             {ServicesData.map((service) => (
