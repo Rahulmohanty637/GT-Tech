@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { TypingText, TitleText } from '../CustomTexts/CustomTexts';
 import ExploreCard from './ExploreCard';
-import Image1 from "../../assets/hero/first.png";
-import Image2 from "../../assets/hero/second.png";
-import Image3 from "../../assets/hero/third.png";
+import Image1 from "../../assets/portfolio/p-14.jpeg";
+import Image2 from "../../assets/portfolio/p-1.jpg";
+import Image3 from "../../assets/portfolio/p-6.jpg";
+import Image4 from "../../assets/portfolio/p-5.jpg";
+import Image5 from "../../assets/portfolio/p16.jpeg";
 
 const Portfolio = () => {
-  const [active, setActive] = useState('world-2')
+  const [active, setActive] = useState('p2')
   const staggerContainer = (staggerChildren, delayChildren) => ({
     hidden: {},
     show: {
@@ -20,29 +22,34 @@ const Portfolio = () => {
 
   const exploreWorlds = [
     {
-      id: 'world-1',
+      id: 'p1',
       imgUrl: Image1,
-      title: 'The Hogwarts',
+      title: 'Industry 4.0',
+      desc: 'Reshaping Manufacturing With Human-centric Innovations',
     },
     {
-      id: 'world-2',
+      id: 'p2',
       imgUrl: Image2,
-      title: 'The Upside Down',
+      title: 'Experience the innovation in parallel',
+      desc: 'Embrace the future with digital twin Tecnology',
     },
     {
-      id: 'world-3',
+      id: 'p3',
       imgUrl: Image3,
-      title: 'Kadirojo Permai',
+      title: '3D Immersive apps',
+      desc: 'We create 3d apps for future learners with the power of gaming and immersive technologies',
     },
     {
-      id: 'world-4',
-      imgUrl: Image2,
-      title: 'Paradise Island',
+      id: 'p4',
+      imgUrl: Image4,
+      title: 'Virtual reality',
+      desc: 'Discover the power of extended reality',
     },
     {
-      id: 'world-5',
-      imgUrl: Image1,
-      title: 'Hawkins Labs',
+      id: 'p5',
+      imgUrl: Image5,
+      title: 'Product Design',
+      desc: 'We Design intricate automative components',
     },
   ];
 

@@ -65,9 +65,7 @@ const App = () => {
       <Hero handleOrderPopup={handleOrderPopup} />
       <Services />
       <Portfolio/>
-      <Banner data={BannerData} />
-      <Banner data={BannerData2} />
-      <Blogs />
+      
       <Partners />
       <Footer />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
