@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMobileAlt } from "react-icons/fa";
+import { FaMailBulk, FaMailchimp, FaMobileAlt } from "react-icons/fa";
 import image from "../../assets/GT_Tech_Logo.png";
 import {
   FaFacebook,
@@ -8,7 +8,7 @@ import {
   FaLocationArrow,
 } from "react-icons/fa6";
 
-const FooterLinks = [
+const CompanyLinks = [
   {
     title: "Home",
     link: "/#",
@@ -18,57 +18,65 @@ const FooterLinks = [
     link: "/#about",
   },
   {
+    title: "Serrvice",
+    link: "/#service",
+  },
+  {
     title: "Contact",
     link: "/#contact",
   },
+];
+
+const BusinessLinks = [
   {
-    title: "Blog",
-    link: "/#blog",
+    title: "Project",
+    link: "/#",
+  },
+  {
+    title: "Our Team",
+    link: "/#",
+  },
+  {
+    title: "Facts",
+    link: "/#",
+  },
+  {
+    title: "Costumers",
+    link: "/#",
   },
 ];
 
 const Footer = () => {
   return (
-    <div className="dark:bg-gray-950">
+    <div className="bg-gray-600 dark:bg-gray-950">
       <div className="container">
         <div className="grid md:grid-cols-3 pb-20 pt-5">
           {/* company details */}
           <div className="py-8 px-4">
             <a
               href="#"
-              className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl
-"
+              className="font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
             >
               <img src={image} alt="gt"></img>
             </a>
-            <p className="text-gray-600 dark:text-white/70  lg:pr-24 pt-3">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
-              alias cum
+            <p className="text-black text-xl font-medium w-screen lg:pr-24 pt-3">
+              Innovation Empowering Tomorrow
             </p>
-            <p className="text-gray-500 mt-4">
-            Innovation Empowering Tomorrow
-            </p>
-            <a
-              href="#"
-              target="_blank"
-              className="inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm rounded-full"
-            >
-              Visit our YouTube Channel
-            </a>
+            <p className="text-black text-xl font-medium mt-20 w-screen">Copyright © 2024 GramTarang Technologies | Powered by GramTarang Technologies</p>
           </div>
 
           {/* Footer links */}
           <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10">
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3">
-                Important Links
+              <h1 className="text-3xl font-extrabold sm:text-left mb-3">
+                Company
               </h1>
               <ul className="space-y-3">
-                {FooterLinks.map((data, index) => (
+                {CompanyLinks.map((data, index) => (
                   <li key={index}>
                     <a
                       href={data.link}
-                      className="text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300"
+                      className="text-black font-semibold hover:text-white duration-300"
                     >
                       {data.title}
                     </a>
@@ -78,15 +86,15 @@ const Footer = () => {
             </div>
             {/* second col links */}
             <div className="py-8 px-4">
-              <h1 className="text-xl font-bold sm:text-left mb-3">
-                Quick Links
+              <h1 className="text-3xl font-extrabold sm:text-left mb-3">
+                Business
               </h1>
               <ul className="space-y-3">
-                {FooterLinks.map((data, index) => (
+                {BusinessLinks.map((data, index) => (
                   <li key={index}>
                     <a
                       href={data.link}
-                      className="text-gray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300"
+                      className="text-black font-semibold dark:text-gray-400 hover:dark:text-white hover:text-white duration-300"
                     >
                       {data.title}
                     </a>
@@ -97,27 +105,32 @@ const Footer = () => {
 
             {/* Company Address */}
             <div className="py-8 px-4 col-span-2 sm:col-auto">
-              <h1 className="text-xl font-bold sm:text-left mb-3">Address</h1>
+              <h1 className="text-3xl font-extrabold sm:text-left mb-3">Address</h1>
               <div>
                 <div className="flex items-center gap-3">
-                  <FaLocationArrow />
-                  <p>Noida , Uttar Pradesh</p>
+                  <div className="text-sm text-black">
+                  <p>D No-50-42/21/4, Flat No 501, P& T Colony, Seethammadhara, Vishakhapatnam – 530013, India</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 mt-6">
+                  <FaMailBulk />
+                  <a href="info@thegttech.com" className="hover:text-white">info@thegttech.com</a>
                 </div>
                 <div className="flex items-center gap-3 mt-6">
                   <FaMobileAlt />
-                  <p>+91 1234567890</p>
+                  <a href="#" className="hover:text-white">+91 9840015963</a>
                 </div>
 
                 {/* social links */}
                 <div className="flex items-center gap-3 mt-6">
                   <a href="#">
-                    <FaInstagram className="text-3xl hover:text-primary duration-300" />
+                    <FaInstagram className="text-3xl hover:text-btn duration-300" />
                   </a>
                   <a href="#">
-                    <FaFacebook className="text-3xl hover:text-primary duration-200" />
+                    <FaFacebook className="text-3xl hover:text-btn duration-200" />
                   </a>
                   <a href="#">
-                    <FaLinkedin className="text-3xl hover:text-primary duration-200" />
+                    <FaLinkedin className="text-3xl hover:text-btn  duration-200" />
                   </a>
                 </div>
               </div>
