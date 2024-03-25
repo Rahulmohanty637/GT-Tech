@@ -1,6 +1,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import image from "../../assets/GT_Tech_Logo.png"
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -79,7 +80,7 @@ const Navbar = () => {
                   <a href="/" className="text-white">
                     {/* <img src="logo.jpg" className="w-10 h-15 mx-auto"></img> */}
                     <img
-                      src="https://thegttech.com/wp-content/uploads/2023/08/GT_Tech_New_Logo_light-215x69.png"
+                      src={image}
                       alt="search"
                       className="w-[124px] h-[124px] object-contain"
                     />

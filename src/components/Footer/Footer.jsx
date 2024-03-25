@@ -1,5 +1,6 @@
 import React from "react";
 import { FaMobileAlt } from "react-icons/fa";
+import image from "../../assets/GT_Tech_Logo.png";
 import {
   FaFacebook,
   FaInstagram,
@@ -38,17 +39,17 @@ const Footer = () => {
               className="text-primary font-semibold tracking-widest text-2xl uppercase sm:text-3xl
 "
             >
-              Eshop
+              <img src={image} alt="gt"></img>
             </a>
             <p className="text-gray-600 dark:text-white/70  lg:pr-24 pt-3">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
               alias cum
             </p>
             <p className="text-gray-500 mt-4">
-              Made with 💖 by The Coding Journey
+            Innovation Empowering Tomorrow
             </p>
             <a
-              href="https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ"
+              href="#"
               target="_blank"
               className="inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm rounded-full"
             >

@@ -24,4 +24,4 @@ const Clients = () => {
   );
 };
 
-export default Partners;
+export default Clients;

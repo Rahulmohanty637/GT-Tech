@@ -20,6 +20,7 @@ import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Testimonials from "./components/Testimonial/Testimonial.jsx";
 import Dassault from "./components/Partners/Dassault.jsx";
 import AMS from "./components/Partners/AMS.jsx";
+import Clients from "./components/Partners/Clients.jsx"
 
 
 const BannerData = {
@@ -72,7 +73,7 @@ const App = () => {
       <Dassault/>
       <AMS/>
       <Testimonials/>
-      <Partners />
+      <Clients />
       <Footer />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>
