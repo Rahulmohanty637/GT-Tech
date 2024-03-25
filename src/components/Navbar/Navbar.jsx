@@ -80,9 +80,9 @@ const Navbar = () => {
                   <a href="/" className="text-white">
                     {/* <img src="logo.jpg" className="w-10 h-15 mx-auto"></img> */}
                     <img
-                      src={image}
+                      src="https://thegttech.com/wp-content/uploads/2023/08/GT_Tech_New_Logo_light-215x69.png"
                       alt="search"
-                      className="w-[124px] h-[124px] object-contain"
+                      className="w-[134px] h-[124px] object-contain"
                     />
                   </a>
                 </div>
