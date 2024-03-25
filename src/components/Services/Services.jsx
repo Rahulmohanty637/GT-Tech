@@ -91,8 +91,8 @@ const Services = () => {
             viewport={{ once: false, amount: 0.25 }}
             className='2xl:max-w-[1280px] w-full mx-auto flex flex-col'
           >
-            <TypingText title="| About"
-              textStyles="text-center" />
+            {/* <TypingText title="| About"
+              textStyles="text-center" /> */}
             <TitleText title={<>How can we help you?
               <br className='md:block hidden' /></>} textStyles="text-center" />
           </motion.div>

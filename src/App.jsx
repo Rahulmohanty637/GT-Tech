@@ -5,7 +5,7 @@ import Category from "./components/Category/Category";
 import Category2 from "./components/Category/Category2";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
-import Partners from "./components/Partners/Partners.jsx";
+import Partners from "./components/Partners/Clients.jsx";
 
 import headphone from "./assets/hero/headphone.png";
 import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png";
@@ -17,6 +17,10 @@ import Popup from "./components/Popup/Popup.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
+import Testimonials from "./components/Testimonial/Testimonial.jsx";
+import Dassault from "./components/Partners/Dassault.jsx";
+import AMS from "./components/Partners/AMS.jsx";
+
 
 const BannerData = {
   discount: "30% OFF",
@@ -65,7 +69,9 @@ const App = () => {
       <Hero handleOrderPopup={handleOrderPopup} />
       <Services />
       <Portfolio/>
-      
+      <Dassault/>
+      <AMS/>
+      <Testimonials/>
       <Partners />
       <Footer />
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
