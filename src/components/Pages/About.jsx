@@ -32,7 +32,6 @@ const About = () => {
             <HeroSection />
             <Aboutus />
             <Who />
-            <Choose />
             <Clients />
             <Footer />
             <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />

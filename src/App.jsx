@@ -37,8 +37,8 @@ const App = () => {
 
   return (
   //  <Home/>
-  //  <About/>
-  <Choose/>
+   <About/>
+
   );
 };
 
