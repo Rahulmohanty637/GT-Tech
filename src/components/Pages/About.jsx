@@ -30,9 +30,9 @@ const About = () => {
         <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
             <Navbar handleOrderPopup={handleOrderPopup} />
             <HeroSection />
-            <Aboutus/>
-            <Who/>
-           <Choose/>
+            <Aboutus />
+            <Who />
+            <Choose />
             <Clients />
             <Footer />
             <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />

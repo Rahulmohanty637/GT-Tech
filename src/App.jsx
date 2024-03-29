@@ -14,6 +14,7 @@ import Clients from "./components/Partners/Clients.jsx"
 import Home from "./components/Pages/Home.jsx";
 import About from "./components/Pages/About.jsx";
 import HeroSection from "./components/HeroSection/HeroSection.jsx";
+import Choose from "./components/Choose/Choose.jsx";
 
 
 
@@ -36,8 +37,8 @@ const App = () => {
 
   return (
   //  <Home/>
-   <About/>
-  
+  //  <About/>
+  <Choose/>
   );
 };
 

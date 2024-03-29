@@ -9,7 +9,10 @@ const Features = () => {
     };
     return (
         <motion.div
-            variants={item}
+            variants={{
+                hidden: { y: 20, opacity: 0 },
+                visible: { y: 0, opacity: 1 }
+            }}
             whileHover={{ scale: 1.1 }}
             className="flex items-center flex-col gap-4 bg-white p-8 rounded-md"
         >

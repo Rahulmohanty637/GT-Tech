@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineUser, AiOutlineStar } from "react-icons/ai";
 
-const Why = () => {
+const Partners = () => {
     return (
         <div className="p-2 shadow-lg min-w-[15rem] bg-white rounded-md">
             <img src={image} alt="" />
@@ -26,4 +26,4 @@ const Why = () => {
     )
 }
 
-export default Why;
+export default Partners;
