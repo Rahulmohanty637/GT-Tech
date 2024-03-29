@@ -11,6 +11,9 @@ import Dassault from "./components/Partners/Dassault.jsx";
 import AMS from "./components/Partners/AMS.jsx";
 import Testimonials from "./components/Testimonial/Testimonial.jsx";
 import Clients from "./components/Partners/Clients.jsx"
+import Home from "./components/Pages/Home.jsx";
+import About from "./components/Pages/About.jsx";
+import HeroSection from "./components/HeroSection/HeroSection.jsx";
 
 
 
@@ -32,18 +35,9 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
-      <Navbar handleOrderPopup={handleOrderPopup} />
-      <Hero handleOrderPopup={handleOrderPopup} />
-      <Services />
-      <Portfolio/>
-      <Dassault/>
-      <AMS/>
-      <Testimonials/>
-      <Clients />
-      <Footer />
-      <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
-    </div>
+  //  <Home/>
+   <About/>
+  
   );
 };
 

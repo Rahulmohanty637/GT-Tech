@@ -49,7 +49,7 @@ const BusinessLinks = [
 
 const Footer = () => {
   return (
-    <div className="bg-gray-600 dark:bg-gray-950">
+    <div className="bg-gray-600 ">
       <div className="container">
         <div className="grid md:grid-cols-3 pb-15 pt-5">
           {/* company details */}
@@ -58,7 +58,7 @@ const Footer = () => {
               href="#"
               className="font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
             >
-              <img src={image} alt="gt"></img>
+              <img src={image} alt="gt" className="w-80"></img>
             </a>
             <p className="text-black text-xl font-medium w-screen lg:pr-24 pt-3">
               Innovation Empowering Tomorrow
