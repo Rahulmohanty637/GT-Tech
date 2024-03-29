@@ -72,16 +72,7 @@ const Choose = () => {
                 whileInView="visible"
                 className="grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8"
             >
-                <motion.div
-                    variants={item}
-                    whileHover={{ scale: 1.1 }}
-                    className="flex items-center flex-col gap-4 bg-white p-8 rounded-md"
-                >
-                    
-                    <a href="" className="text-sm text-gray">
-                        View More
-                    </a>
-                </motion.div>
+              
             </motion.div>
         </div>
     )
