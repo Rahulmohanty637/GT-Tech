@@ -17,3 +17,16 @@
     @apply w-full rounded-full border border-gray-300 dark:border-gray-500 dark:bg-gray-800 px-2 py-1 mb-4;
   }
 }
+
+@layer base {
+  img {
+    @apply w-full
+  }
+
+  .section {
+    @apply container mx-auto py-24 px-6 
+  }
+  .animate-slide:hover {
+    animation-play-state: paused;
+  }
+}

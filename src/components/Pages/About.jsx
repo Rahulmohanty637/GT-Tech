@@ -9,6 +9,7 @@ import HeroSection from '../HeroSection/HeroSection.jsx';
 import Aboutus from '../AboutUs/Aboutus.jsx';
 import Who from '../Who/Who.jsx';
 import Choose from '../Choose/Choose.jsx';
+import Partners from '../Choose/Partners.jsx';
 
 const About = () => {
     const [orderPopup, setOrderPopup] = React.useState(false);
@@ -32,6 +33,8 @@ const About = () => {
             <HeroSection />
             <Aboutus />
             <Who />
+            <Choose/>
+            <Partners/>
             <Clients />
             <Footer />
             <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />

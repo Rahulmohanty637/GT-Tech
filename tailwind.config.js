@@ -14,6 +14,15 @@ export default {
         titlr: "#acb9bf",
         btn: "#44d5ee",
       },
+      animation: {
+        slide: "slide 25s linear infinite"
+      },
+      keyframes: {
+        slide: {
+          "0%,100%": { transform: "translateX(5%)" },
+          "50%": { transform: "translateX(-100%)" }
+        }
+      },
       container: {
         center: true,
         padding: {

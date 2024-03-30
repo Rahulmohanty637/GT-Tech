@@ -1,26 +1,84 @@
 import React from 'react';
-import { AiOutlineUser, AiOutlineStar } from "react-icons/ai";
+import Company1 from '../../assets/partners/Dassault_logo.png';
+import Company2 from '../../assets/partners/ashok-leyland-33470.png';
+import Company3 from '../../assets/partners/Hyundai-Logo-1.png';
+import Company4 from '../../assets/partners/aws.png';
+import Company5 from '../../assets/partners/HCL.png';
+import Company6 from '../../assets/partners/picture2.png';
+
+import Company from './Company';
+
+const companies = [
+    {
+        id: 1,
+        image: Company1,
+        category: "Web Design",
+        title: "The Complete Web Design Course",
+        rating: 4.9,
+        participants: 500,
+        price: 105,
+    },
+    {
+        id: 2,
+        image: Company2,
+        category: "Web Development",
+        title: "FullStack Web Development Course",
+        rating: 4.8,
+        participants: 700,
+        price: 125,
+    },
+    {
+        id: 3,
+        image: Company3,
+        category: "Web Development",
+        title: "Python Beginner to Advanced Course",
+        rating: 4.9,
+        participants: 300,
+        price: 99,
+    },
+    {
+        id: 4,
+        image: Company4,
+        category: "Web Design",
+        title: "UI/UX Design Crazy Course With Harrys",
+        rating: 4.7,
+        participants: 600,
+        price: 85,
+    },
+    {
+        id: 5,
+        image: Company5,
+        category: "AI Development",
+        title: "AI Development With Python (complete beginner course)",
+        rating: 4.9,
+        participants: 500,
+        price: 105,
+    },
+    {
+        id: 6,
+        image: Company6,
+        category: "Web Design",
+        title: "The Complete Web Design Course",
+        rating: 4.9,
+        participants: 500,
+        price: 105,
+    },
+];
 
 const Partners = () => {
     return (
-        <div className="p-2 shadow-lg min-w-[15rem] bg-white rounded-md">
-            <img src={image} alt="" />
-            <div className="mt-2 text-xs text-Teal">{category}</div>
-            <div className="text-sm mt-2 font-bold">{title}</div>
-            <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                    <div className="bg-Solitude p-1 rounded-full">
-                        <AiOutlineUser className="text-Teal" />
-                    </div>
-                    <div className="text-sm font-bold">{participants}</div>
+        <div className="section -mt-20" id="courses">
+            <div className="text-center">
+                <div className="sm:text-3xl text-2xl font-bold mb-10">
+                    Collaborate and Partners with
                 </div>
-                <div className="flex items-center gap-2">
-                    <div className="bg-Solitude p-1 rounded-full">
-                        <AiOutlineStar className="text-yellow" />
+                <div className='mt-12 overflow-x-hidden w-full '>
+                    <div className="flex gap-8 md:w-full sm:w-[170%] xs:w-[340%] w-[480%] animate-slide">
+                        {companies.map((company) => {
+                            return <Company key={company.id} {...company} />
+                        })}
                     </div>
-                    <div className="text-sm font-bold">{rating}</div>
                 </div>
-                <div className="text-sm font-bold">${price}</div>
             </div>
         </div>
     )
