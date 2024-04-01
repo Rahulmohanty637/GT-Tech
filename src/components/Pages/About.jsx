@@ -30,7 +30,7 @@ const About = () => {
     return (
         <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
             <Navbar handleOrderPopup={handleOrderPopup} />
-            <HeroSection />
+            <HeroSection title={"About"} subtitle={"Exploring GramTarang Technologies"}/>
             <Aboutus />
             <Who />
             <Choose/>
