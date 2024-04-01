@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
+
 import Footer from "./components/Footer/Footer.jsx";
 import Popup from "./components/Popup/Popup.jsx";
 import AOS from "aos";
@@ -15,6 +15,7 @@ import Home from "./components/Pages/Home.jsx";
 import About from "./components/Pages/About.jsx";
 import HeroSection from "./components/HeroSection/HeroSection.jsx";
 import Choose from "./components/Choose/Choose.jsx";
+import Service from "./components/Pages/Service.jsx";
 
 
 
@@ -38,7 +39,7 @@ const App = () => {
   return (
   //  <Home/>
   //  <About/>
-  <Services/>
+  <Service/>
 
   );
 };
