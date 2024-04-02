@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { TypingText, TitleText } from '../CustomTexts/CustomTexts';
+import { TitleText } from '../CustomTexts/CustomTexts';
 import ExploreCard from './ExploreCard';
 import Image1 from "../../assets/portfolio/p-14.jpeg";
 import Image2 from "../../assets/portfolio/p-1.jpg";

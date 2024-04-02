@@ -4,12 +4,9 @@ import Footer from "../Footer/Footer.jsx";
 import Popup from "../Popup/Popup.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Clients from "../Partners/Clients.jsx"
 import HeroSection from '../HeroSection/HeroSection.jsx';
-import Aboutus from '../AboutUs/Aboutus.jsx';
-import Who from '../Who/Who.jsx';
-import Choose from '../Choose/Choose.jsx';
-import Partners from '../Choose/Partners.jsx';
+import ConsultingServices from '../ServiceComponent/ConsultingServices.jsx';
+import StrategicOutsourcingService from '../ServiceComponent/StrategicOutsourcingService.jsx';
 
 const Service = () => {
     const [orderPopup, setOrderPopup] = React.useState(false);
@@ -31,6 +28,8 @@ const Service = () => {
         <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
             <Navbar handleOrderPopup={handleOrderPopup} />
             <HeroSection title={"Service"} subtitle={"hgsdufkluh"}/>
+            <ConsultingServices/>
+            <StrategicOutsourcingService/>
             <Footer />
             <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
         </div>
