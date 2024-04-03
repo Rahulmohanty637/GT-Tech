@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import HeroSection from '../HeroSection/HeroSection.jsx';
 import ConsultingServices from '../ServiceComponent/ConsultingServices.jsx';
 import StrategicOutsourcingService from '../ServiceComponent/StrategicOutsourcingService.jsx';
+import Cards from '../ServiceComponent/Cards.jsx';
 
 const Service = () => {
     const [orderPopup, setOrderPopup] = React.useState(false);
@@ -30,6 +31,7 @@ const Service = () => {
             <HeroSection title={"Service"} subtitle={"hgsdufkluh"}/>
             <ConsultingServices/>
             <StrategicOutsourcingService/>
+            <Cards/>
             <Footer />
             <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
         </div>
