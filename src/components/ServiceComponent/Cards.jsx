@@ -1,43 +1,32 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import expertise from "../../assets/icons/expertise.png";
-import Innovation from "../../assets/icons/project-management.png";
-import Quality from "../../assets/icons/assurance.png";
-import Cost from "../../assets/icons/profit.png";
-import Client from "../../assets/icons/centralized.png";
-import Feature from '../Choose/Feature';
+import consultant from "../../assets/icons/consulting.png";
+import Manufacture from "../../assets/icons/manufacture.png";
+import Transformation from "../../assets/icons/digital.png";
+import Edutech from "../../assets/icons/edutech.png";
+import CardContent from './CardContent';
 
 const cards = [
     {
         id: 1,
-        icon: expertise,
-        category: "Expertise",
-        desc: "Our team of experienced professionals is dedicated to delivering exceptional results.",
+        icon: consultant,
+        category: "Intelligent Product Design Development Consulting ",
     },
     {
         id: 2,
-        icon: Innovation,
-        category: "Innovation",
-        desc: "We leverage the power of the 3DExperience Platform to stay at the forefront of the latest.",
+        icon: Manufacture,
+        category: "Manufacturing Execution System",
     },
     {
         id: 3,
-        icon: Quality,
-        category: "Quality Assurance",
-        desc: " We ensure the highest quality standards is maintained and delivered.",
+        icon: Transformation,
+        category: "Digital Transformation Consulting through PLM",
     },
     {
         id: 4,
-        icon: Cost,
-        category: "Cost-Effective",
-        desc: "We offer competitive pricing and work efficiently to maximize the value of your investment.",
-    },
-    {
-        id: 5,
-        icon: Client,
-        category: "Client-Centric",
-        desc: "Keeping scope of the project at top with complete customer involvement is our top priority.",
-    }, ,
+        icon: Edutech,
+        category: "Edutech for Skill Development",
+    }, 
 ];
 
 const Cards = () => {
@@ -60,7 +49,7 @@ const Cards = () => {
         <div className="section" id="courses">
             <div className="text-center">
                 <div className="sm:text-3xl text-2xl font-bold mb-5">
-                    Why Gramtarang Technologies for you?
+                    Our Offerings
                 </div>
                 <p className="text-sm text-gray leading-7 max-w-[700px] mx-auto">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
@@ -73,9 +62,9 @@ const Cards = () => {
                 variants={container}
                 initial="hidden"
                 whileInView="visible"
-                className='grid md:grid-cols-5 sm:grid-cols-2 mt-12 gap-8'>
+                className='grid md:grid-cols-4 sm:grid-cols-2 mt-12 gap-8'>
                 {cards.map((card)=> {
-                    return <Feature key={card.id} {...card}/>
+                    return <CardContent key={card.id} {...card}/>
                 })}
             </motion.div>
         </div>
