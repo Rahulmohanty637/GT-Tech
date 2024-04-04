@@ -28,10 +28,10 @@ const Service = () => {
     return (
         <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
             <Navbar handleOrderPopup={handleOrderPopup} />
-            <HeroSection title={"Service"} subtitle={"hgsdufkluh"}/>
-            <ConsultingServices/>
-            <StrategicOutsourcingService/>
-            <Cards/>
+            <HeroSection title={"Service"} subtitle={"Empowering Industries with Cutting-Edge Technology:Your Partner in Industry 4.0 Solutions and Digital Transformation"}/>
+            <ConsultingServices />
+            <StrategicOutsourcingService />
+            <Cards />
             <Footer />
             <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
         </div>

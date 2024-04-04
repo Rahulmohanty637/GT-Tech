@@ -26,9 +26,9 @@ const App = () => {
   }, []);
 
   return (
-  //  <Home/>
+   <Home/>
   //  <About/>
-  <Service/>
+  // <Service/>
 
   );
 };
