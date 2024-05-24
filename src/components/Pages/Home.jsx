@@ -13,12 +13,6 @@ import Testimonials from "../Testimonial/Testimonial.jsx";
 import Clients from "../Partners/Clients.jsx"
 
 const Home = () => {
-  const [orderPopup, setOrderPopup] = React.useState(false);
-
-  const handleOrderPopup = () => {
-    setOrderPopup(!orderPopup);
-  };
-
   React.useEffect(() => {
     AOS.init({
       duration: 800,
@@ -31,16 +25,13 @@ const Home = () => {
   
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
-      <Navbar handleOrderPopup={handleOrderPopup} />
-      <Hero handleOrderPopup={handleOrderPopup} />
+      <Hero />
       <Services />
       <Portfolio/>
       <Dassault/>
       <AMS/>
       <Testimonials/>
       <Clients />
-      <Footer />
-      <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>
   )
 }

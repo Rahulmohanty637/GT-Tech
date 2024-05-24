@@ -5,8 +5,9 @@ import Home from "./components/Pages/Home.jsx";
 import About from "./components/Pages/About.jsx";
 import Service from "./components/Pages/Service.jsx";
 import { createBrowserRouter } from "react-router-dom";
-
-
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
   const [orderPopup, setOrderPopup] = React.useState(false);
@@ -26,10 +27,11 @@ const App = () => {
   }, []);
 
   return (
-   <Home/>
-  //  <About/>
-  // <Service/>
-
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
   );
 };
 

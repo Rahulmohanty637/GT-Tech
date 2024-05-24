@@ -66,8 +66,8 @@ const Navbar = () => {
               </div>
               <div className="hidden md:block">
                 <div className="ml-4 flex items-center space-x-4">
-                  <FlyoutLink href="#">About</FlyoutLink>
-                  <FlyoutLink href="#" FlyoutContent={ServiceContent}>
+                  <FlyoutLink href="/about">About</FlyoutLink>
+                  <FlyoutLink href="/service" FlyoutContent={ServiceContent}>
                     Services
                   </FlyoutLink>
                   <FlyoutLink href="#" FlyoutContent={ProductContent}>

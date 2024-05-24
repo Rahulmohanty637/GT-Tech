@@ -10,11 +10,6 @@ import StrategicOutsourcingService from '../ServiceComponent/StrategicOutsourcin
 import Cards from '../ServiceComponent/Cards.jsx';
 
 const Service = () => {
-    const [orderPopup, setOrderPopup] = React.useState(false);
-
-    const handleOrderPopup = () => {
-        setOrderPopup(!orderPopup);
-    };
 
     React.useEffect(() => {
         AOS.init({
@@ -27,13 +22,10 @@ const Service = () => {
     }, []);
     return (
         <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
-            <Navbar handleOrderPopup={handleOrderPopup} />
             <HeroSection title={"Service"} subtitle={"Empowering Industries with Cutting-Edge Technology:Your Partner in Industry 4.0 Solutions and Digital Transformation"}/>
             <ConsultingServices />
             <StrategicOutsourcingService />
             <Cards />
-            <Footer />
-            <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
         </div>
     )
 }
