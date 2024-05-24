@@ -1,7 +1,6 @@
-
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import logo from "../../assets/GT_Tech_Logo.png";
 
 const Navbar = () => {
   const [isClick, setisClick] = useState(false);
@@ -9,7 +8,6 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setisClick(!isClick);
   };
-
 
   const [isServiceOpen, setIsServiceOpen] = useState(false);
   const [isProductOpen, setIsProductOpen] = useState(false);
@@ -45,21 +43,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className={`py-8 relative`}
-    >
+    <nav className={`py-8 relative`}>
       <>
         <nav className="max-w-8xl ml-12 mr-12 bg-gray-600 rounded-3xl raleway">
           <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center justify-between h-20">
+            <div className="flex items-center justify-between h-24">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <a href="/" className="text-white">
                     {/* <img src="logo.jpg" className="w-10 h-15 mx-auto"></img> */}
                     <img
-                      src="https://thegttech.com/wp-content/uploads/2023/08/GT_Tech_New_Logo_light-215x69.png"
+                      src={logo}
                       alt="search"
-                      className="w-[124px] h-[124px] object-contain"
+                      className="w-[194px] h-[154px] object-contain"
                     />
                   </a>
                 </div>
