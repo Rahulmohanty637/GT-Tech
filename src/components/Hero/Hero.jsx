@@ -11,7 +11,7 @@ const HeroData = [
     img: Image1,
     subtitle: "Gram Tarang",
     title: "Start Your Digital Transformation Journey",
-    title2: "Digitilization",
+    title2: "Digitilisation",
   },
   {
     id: 2,
