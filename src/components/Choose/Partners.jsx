@@ -54,15 +54,7 @@ const companies = [
         participants: 500,
         price: 105,
     },
-    {
-        id: 6,
-        image: Company6,
-        category: "Web Design",
-        title: "The Complete Web Design Course",
-        rating: 4.9,
-        participants: 500,
-        price: 105,
-    },
+   
 ];
 
 const Partners = () => {
