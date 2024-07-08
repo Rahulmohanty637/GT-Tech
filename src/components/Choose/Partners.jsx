@@ -4,7 +4,7 @@ import Company2 from '../../assets/partners/ashok-leyland-33470.png';
 import Company3 from '../../assets/partners/Hyundai-Logo-1.png';
 import Company4 from '../../assets/partners/aws.png';
 import Company5 from '../../assets/partners/HCL.png';
-import Company6 from '../../assets/partners/picture2.png';
+
 
 import Company from './Company';
 
