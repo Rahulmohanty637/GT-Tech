@@ -1,4 +1,3 @@
-import React from 'react';
 import Company1 from '../../assets/partners/Dassault_logo.png';
 import Company2 from '../../assets/partners/ashok-leyland-33470.png';
 import Company3 from '../../assets/partners/Hyundai-Logo-1.png';
